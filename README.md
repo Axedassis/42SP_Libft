@@ -36,10 +36,35 @@ inside the cloned repository folder
 ```bash
 make all
 ```
-If you want the library to be compiled including the bonus functions, run the following command instead
+⚠️ If you want the library to be compiled including the bonus functions, run the following command instead
 ```bash
 make bonus
 ```
 At this point, the **lib, build and objects** folders have been created and the files arranged as properly
 
-**3. How to use?**
+**3. How to use**
+
+Within your file in which you intend to use the functions, include the library header to have access to the prototype of the functions and their definitions
+```c
+#include "./includes/libft.h"
+```
+**4. How to compile**
+
+To correctly compile the code together with the library, it is necessary to pay attention to the relative paths to the files
+```bash
+$ gcc @.c -Wall -Wextra -Werror -lft -L./lib -I. -o main
+```
+  1. **Compile `@.c`** with strict warnings:
+     - `-Wall`: Enable basic warnings.
+     - `-Wextra`: Enable extra warnings.
+     - `-Werror`: Treat all warnings as errors.
+  
+  2. **Link the `libft.a` library** from the `./lib` directory:
+     - `-lft`: Link with `libft.a` (located in `./lib`).
+     - `-L./lib`: Specify `./lib` as the library directory.
+
+  3. **Include the `./includes` directory** for header files:
+     - `-I./includes`: Look for header files in the `./includes` directory.
+
+  4. **Output file named `main`:**
+     - `-o main`: Name the compiled output `main`.

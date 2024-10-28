@@ -51,7 +51,7 @@ SRC_BONUS = ft_lstadd_back.c \
 OBJ := $(SRC:.c=.o)
 OBJ_BONUS := $(SRC_BONUS:.c=.o)
 
-NAME = liblibft.a
+NAME = libft.a
 
 all: $(NAME)
 
