@@ -1,4 +1,4 @@
-# Libft 42SP🌵
+# 🌵Libft 42SP
 
 ### 🗣️What is Libft?
 Libft is a solo project at **42** that challenges students to implement a collection of essential _C library functions_ from scratch, along with additional utility functions. This project serves as a foundational exercise, reinforcing key programming concepts and providing a custom-built library of functions that will be valuable for future projects and further C programming endeavors. By completing Libft, students gain _deeper_ insight into how these core functions operate and acquire the **skills** needed to create _efficient, reusable_ code for a wide range of applications.
@@ -117,7 +117,7 @@ Below is a table with the _name and respective functionality_ of each function p
 | ft_lstiter      | applies a function to each element of a list.                     |
 | ft_lstmap       | applies a function to each element of a list.                     |
 
-### 🚩Points to pay attention to
+### 🚩Points to pay attention
 
 **1. Project structuring** 
 
@@ -126,3 +126,10 @@ It is essential to note that the project's structure—both in terms of folders 
 **2. Project testing** 
 
 All functions contained within this repository have undergone extensive testing multiple times using the [Francinette](https://github.com/xicodomingues/francinette) test package. This comprehensive testing suite aggregates a variety of additional test repositories, ensuring that each function meets the high standards of accuracy and reliability mandated by the project documentation. By utilizing Francinette, we can confidently verify the correctness of our implementations, as it systematically checks for a wide range of edge cases and functionality criteria.
+
+**3. Design patterns**
+
+The entire project complies with the rigorous standards set by École 42, ensuring that all coding practices align with the prescribed norms. This adherence enhances code quality, maintainability, and consistency across projects within the 42 community. For more information on the importance of these standards, as well as guidance on their application, please refer to the dedicated tool [repository](https://github.com/42School/norminette).Following these guidelines ensures that the code is both functional and elegant, reflecting the high standards expected at École 42.
+
+
+#### ⭐that's all, thank you very much⭐
