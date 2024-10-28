@@ -25,13 +25,13 @@ Libft is a solo project at **42** that challenges students to implement a collec
 The library is implemented in the C programming language, to compile and run the library, it requires the **GCC** (GNU Compiler Collection), which provides essential tools for compiling C code into executable files.Additionally, it depends on some _standard C libraries_, which supply fundamental functions and definitions used within the library.
 
 #### Instructions
-1. Cloning the repository
+**1. Cloning the repository**
 ```bash
 $ git clone https://github.com/Axedassis/42SP_Libft
 ```
 
-2. Compiling the library
-    inside the cloned repository folder
+**2. Compiling the library**
+inside the cloned repository folder
 ```bash
 make all
 ```
@@ -41,5 +41,4 @@ make bonus
 ```
 At this point, the **lib, build and objects** folders have been created and the files arranged as properly
 
-3. How to use?
-
+**3. How to use?**
