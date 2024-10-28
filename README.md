@@ -31,6 +31,7 @@ $ git clone https://github.com/Axedassis/42SP_Libft
 ```
 
 **2. Compiling the library**
+
 inside the cloned repository folder
 ```bash
 make all
