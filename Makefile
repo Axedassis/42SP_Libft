@@ -1,5 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
+OBJ_DIR = build/objects/
 AR = ar rcs
 
 SRC = ft_atoi.c \
@@ -50,24 +51,27 @@ SRC_BONUS = ft_lstadd_back.c \
 OBJ := $(SRC:.c=.o)
 OBJ_BONUS := $(SRC_BONUS:.c=.o)
 
-NAME = libft.a
+NAME = liblibft.a
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(AR) $@ $^
+$(NAME): $(addprefix ./src/, $(OBJ))
+	mkdir -p lib
+	$(AR) ./lib/$@ $(addprefix $(OBJ_DIR), $(SRC:.c=.o))
 
 bonus: $(OBJ) $(OBJ_BONUS)
 	$(AR) $(NAME) $^
 
 %.o: %.c
+	mkdir -p $(OBJ_DIR)
 	$(CC) $(CFLAGS) -c $< -o $@
+	mv $@ $(OBJ_DIR)
 
 clean: 
-	rm -rf $(OBJ) $(OBJ_BONUS)
+	rm -rf $(addprefix $(OBJ_DIR), $(SRC:.c=.o)) $(addprefix $(OBJ_DIR), /$(SRC_BONUS:.c=.o)) 
 
 fclean: clean
-	rm -rf $(NAME)
+	rm -rf ./lib$(NAME) ./lib ./build
 
 re: fclean all
 
