@@ -70,7 +70,9 @@ $ gcc @.c -Wall -Wextra -Werror -lft -L./lib -I. -o main
      - `-o main`: Name the compiled output `main`.
 
 ### 📎Functions
-| Function Name   |                    functionality                                  |
+
+Below is a table with the _name and respective functionality_ of each function present within the library. To have better knowledge of function prototyping, it is recommended to look at **includes/libft.h**
+| Function Name   |                    Functionality                                  |
 |-----------------|:-----------------------------------------------------------------:|
 | ft_isalpha      | checks for an alphabetic character.                               |
 | ft_isdigit      | checks for a digit (0 through 9).                                 |
@@ -114,3 +116,11 @@ $ gcc @.c -Wall -Wextra -Werror -lft -L./lib -I. -o main
 | ft_lstclear     | deletes and free list.                                            |
 | ft_lstiter      | applies a function to each element of a list.                     |
 | ft_lstmap       | applies a function to each element of a list.                     |
+
+### 🚩Points to pay attention to
+
+**1. Project structuring** 
+It is essential to note that the project's structure—both in terms of folders and compilation process—has been deliberately organized to ensure cohesion and clarity, particularly for sharing and maintaining the repository. While the published version has been enhanced for readability and ease of navigation, the original file structure was kept more straightforward, embodying a minimalist design with a simplified folder layout and a basic Makefile for compilation. This minimalist approach in the original version allows for a faster setup and more accessible development environment, prioritizing functionality and efficiency. However, the enhanced repository structure in the published version aids in collaboration, readability, and scalability, making it better suited for continued development and community use.
+
+**2. Project testing** 
+All functions contained within this repository have undergone extensive testing multiple times using the [Francinette](https://github.com/xicodomingues/francinette) test package. This comprehensive testing suite aggregates a variety of additional test repositories, ensuring that each function meets the high standards of accuracy and reliability mandated by the project documentation. By utilizing Francinette, we can confidently verify the correctness of our implementations, as it systematically checks for a wide range of edge cases and functionality criteria.
