@@ -29,4 +29,17 @@ The library is implemented in the C programming language, to compile and run the
 ```bash
 $ git clone https://github.com/Axedassis/42SP_Libft
 ```
+
 2. Compiling the library
+    inside the cloned repository folder
+```bash
+make all
+```
+If you want the library to be compiled including the bonus functions, run the following command instead
+```bash
+make bonus
+```
+At this point, the **lib, build and objects** folders have been created and the files arranged as properly
+
+3. How to use?
+
