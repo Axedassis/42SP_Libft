@@ -132,4 +132,4 @@ All functions contained within this repository have undergone extensive testing 
 The entire project complies with the rigorous standards set by École 42, ensuring that all coding practices align with the prescribed norms. This adherence enhances code quality, maintainability, and consistency across projects within the 42 community. For more information on the importance of these standards, as well as guidance on their application, please refer to the dedicated tool [repository](https://github.com/42School/norminette).Following these guidelines ensures that the code is both functional and elegant, reflecting the high standards expected at École 42.
 
 
-#### ⭐that's all, thank you very much⭐
+### ⭐ that's all, thank you very much ⭐
